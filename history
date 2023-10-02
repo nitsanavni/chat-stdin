@@ -1,0 +1,67 @@
+    1  cd ..
+    2  gh
+    3  code chat
+    4  chmod +x chat
+    5  ./chat hello
+    6  pwd
+    7  ls
+    8  h
+    9  cp chat chat-stdin/
+   10  cd chat-stdin/
+   11  git status
+   12  git add .
+   13  git commit -m "add the chat script'
+   14  git commit -m "add the chat script"
+   15  git push 
+   16  git log -p
+   17  pwd
+   18  ls
+   19  chat hello\!
+   20  ls
+   21  head chat 
+   22  chat hello\!
+   23  ./chat hello\!
+   24  ./chat how to add pwd to PATH?
+   25  export PATH=$PATH:$(pwd)
+   26  chat hello\!
+   27  ls
+   28  ls | chat whats this?
+   29  chat "edit this script such that
+- it reads stdin
+
+- then it appends it to the current prompt to gpt
+- leave a few empty lines in between, and a "---" line
+
+---
+
+$(cat chat)"
+   30  chat -c "don't override the user message, just append to it the stdin"
+   31  chat -c "let's have a fw empty lines between the user msg and stdin"
+   32  git diff
+   33  git status
+   34  git log
+   35  code chat 
+   36  git diff
+   37  chat hello\!
+   38  git log -p -n 5
+   39  git log -p -n 5 | chat what was I working on\?
+   40  git log -p -n 5 | chat what\'s that\?
+   41  git log -p -n 5 | chat what\'s that\? short answer
+   42  chat -c "what was I working on here?"
+   43  chat "I like the use of 'cat -' but I want to be able to not pipe any stdin into this script without it waiting for stdin... short answer please
+
+$(cat chat)"
+   44  chat hello\!
+   45  ls | chat how many files\?
+   46  date | chat jsonify this date\! only output valid json | jq
+   47  date | chat jsonify this date\! only output valid json 
+   48  date | chat jsonify this date\! only output valid json | jq
+   49  date | chat jsonify this date\! spread the fields, only output valid json | jq
+   50  git status
+   51  git diff
+   52  git add -p
+   53  git commit -m 'chat script takes stdin'
+   54  git push 
+   55  chat hello
+   56  h
+   57  h > history

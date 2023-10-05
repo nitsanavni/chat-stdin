@@ -7,6 +7,14 @@ API_URL="https://api.openai.com/v1/chat/completions"
 
 CONTINUE=false
 
+for arg in "$@"; do
+  shift
+  case "$arg" in
+  "--continue") set -- "$@" "-c" ;;
+  *) set -- "$@" "$arg" ;;
+  esac
+done
+
 while getopts ":3c" opt; do
   case $opt in
   3)

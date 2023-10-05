@@ -1,0 +1,60 @@
+# BingoFire requirements
+
+Create a script that displays the series from 1 to 50.
+However, there should be special conditions implemented.
+If a number contains the digit 7, it should display "Bingo" in place of the number.
+Where a number ends in 0, it should output "Fire".
+If a number meets both conditions (i.e., it contains the digit 7 and ends with 0), it should print "BingoFire". 
+
+Example output:
+
+1
+2
+3
+4
+5
+6
+Bingo
+8
+9
+Fire
+11
+12
+13
+14
+15
+16
+Bingo
+18
+19
+Fire
+21
+22
+23
+24
+25
+26
+Bingo
+28
+29
+Fire
+31
+32
+33
+34
+35
+36
+Bingo
+38
+39
+Fire
+41
+42
+43
+44
+45
+46
+Bingo
+48
+49
+Fire

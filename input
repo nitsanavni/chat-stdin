@@ -1,0 +1,14 @@
+refer to file and their contents
+
+cursor style:
+@requirements
+
+handlebars style:
+{requirements}
+
+envsubst style:
+${requirements}
+
+we're trying to simplify:
+1. worry about escaping / double quoting
+2. seamlessly refer to a file and its contents

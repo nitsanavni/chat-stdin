@@ -31,7 +31,6 @@ while getopts ":3c" opt; do
 done
 shift $((OPTIND - 1))
 
-# append stdin to USER_MESSAGE
 if [ ! -t 0 ]; then
   STDIN_MESSAGE=$(cat -)
 else
@@ -39,10 +38,7 @@ else
 fi
 
 USER_MESSAGE="$*"
-
-# append a few empty lines to USER_MESSAGE
 USER_MESSAGE="$USER_MESSAGE\n\n\n"
-
 USER_MESSAGE="$USER_MESSAGE $STDIN_MESSAGE"
 
 if $CONTINUE && [ -s "$CHAT_FILE" ]; then

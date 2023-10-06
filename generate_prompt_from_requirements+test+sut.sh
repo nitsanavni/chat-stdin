@@ -7,24 +7,25 @@ sut_file="bingo_fire.py"
 
 display_requirements() {
     echo "Here are the requirements:"
-    echo '```'
-    cat "$requirements_file"
-    echo '```'
+    code_block text < "$requirements_file"
 }
 
 display_requirements_test() {
     echo "Here is the test:"
-    echo '```'
-    cat "$test_file"
-    echo '```'
+    code_block "$LANGUAGE" < "$test_file"
 }
 
 display_sut() {
     echo "Here is the system under test:"
-    echo '```'
-    cat "$sut_file"
+    code_block "$LANGUAGE" < "$sut_file"
+}
+
+code_block() {
+    echo '```' "${1:text}"
+    cat
     echo '```'
 }
+
 
 generate_prompt() {
 cat <<PROMPT
